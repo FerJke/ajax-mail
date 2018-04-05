@@ -60,7 +60,6 @@ var validateForm = (function() {
     return stat;
   }
 
-  // create request message
 	// create request message
 	function showMessage(msg){
 		var wrapper = document.createElement("div");
@@ -73,9 +72,9 @@ var validateForm = (function() {
 		wrapper.appendChild(inner);
 		document.body.appendChild(wrapper);
 
-		setTimeout(function(){
-      document.body.removeChild(document.querySelector(".popup"));
-    }, 1500);
+		// setTimeout(function(){
+    //   document.body.removeChild(document.querySelector(".popup"));
+    // }, 1500);
 	}
 
   // send AJAX
@@ -87,6 +86,7 @@ var validateForm = (function() {
     xhr.onreadystatechange = function(){
       if( xhr.readyState == 4 && xhr.status == 200 ) {
 				form.reset();
+        console.log(this.responseText);
         showMessage(this.responseText);
       }
     };

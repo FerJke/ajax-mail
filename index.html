@@ -10,7 +10,7 @@
 <body>
   <div class="page-wrapper">
     <h1 class="title txt-center">Заполните форму</h1>
-    <form class="form" action="/" name="contact-form" method="POST" id="contact-form">
+    <form class="form" action="/" name="contact-form" method="POST" enctype="multipart/form-data" id="contact-form">
       <div class="form__block txt-center">
         <label for="name">Имя</label>
         <input type="text" name="name" id="name" placeholder="Имя">
@@ -25,7 +25,7 @@
       </div>
       <div class="form__block txt-center">
         <label for="message">Сообщение</label>
-        <textarea name="message" id="msg" rows="8" cols="80" placeholder="Ваш сообщение"></textarea>
+        <textarea name="msg" id="message" rows="8" cols="80" placeholder="Ваш сообщение"></textarea>
       </div>
       <div class="form__block txt-center">
         <button type="submit">Отправить</button>
