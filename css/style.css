@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, p {
   top: 50%;
   left: 50%;
   width: 96%;
-  min-width: 420px;
+  max-width: 420px;
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 3rem 2rem;

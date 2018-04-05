@@ -12,9 +12,6 @@ var validateForm = (function() {
     }
   }
 
-  // Create span - element for error
-  //function createElem(elem) {}
-
   // Validation input Name
   function validationName() {
     var inp = parameters.form.elements[parameters.name];
@@ -72,9 +69,9 @@ var validateForm = (function() {
 		wrapper.appendChild(inner);
 		document.body.appendChild(wrapper);
 
-		// setTimeout(function(){
-    //   document.body.removeChild(document.querySelector(".popup"));
-    // }, 1500);
+		setTimeout(function(){
+      document.body.removeChild(document.querySelector(".popup"));
+    }, 1500);
 	}
 
   // send AJAX
@@ -86,7 +83,6 @@ var validateForm = (function() {
     xhr.onreadystatechange = function(){
       if( xhr.readyState == 4 && xhr.status == 200 ) {
 				form.reset();
-        console.log(this.responseText);
         showMessage(this.responseText);
       }
     };
