@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Global */
+.txt-center {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+/* Page Style */
+.page-wrapper {
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #fefefa;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+  max-width: 560px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #1da1f2;
+  box-shadow: 0 5px 10px 0 rgba(5, 0, 255, 0.25);
+}
+
+.form label {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 560px;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #fff;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.form button {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+
+.form button:hover {
+  background-color: rgba(5, 0, 255, 0.15);
+}
+
+.form__block {
+  margin-bottom: 1.25rem;
+}
+
+.form__block:last-child {
+  margin-bottom: 0;
+}
